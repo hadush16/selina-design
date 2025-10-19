@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop — Selina Design</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><img src="images/selu.jpg" alt="Selina Design logo" class="logo"/></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="cta"><a href="contact.html" class="btn btn-primary">Contact</a></div>
+      <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="breadcrumb">
+      <h1>Shop</h1>
+      <p class="lead">Browse dresses and jewelry. Click <strong>Order on WhatsApp</strong> to place your order quickly.</p>
+    </section>
+
+    <section class="shop-grid">
+      <!-- Product 1 -->
+      <article class="product">
+        <img src="images/photo_2025-10-19_09-51-47.jpg" alt="White Habesha Dress">
+        <h3>Classic White Habesha Dress</h3>
+        <p class="small">Traditional embroidery, cotton.</p>
+        <div class="price">
+          <span class="old">Br 2,800</span>
+          <span class="new">Br 2,300</span>
+          <span class="discount">-18%</span>
+        </div>
+        <a class="btn btn-order" href="https://wa.me/251911395853?text=Hi%20Selina%20Design%2C%20I%20want%20to%20order%20the%20Classic%20White%20Habesha%20Dress.">Order on WhatsApp</a>
+      </article>
+<!-- Product 1 -->
+      <article class="product">
+        <img src="images/photo_2025-10-19_09-51-47.jpg" alt="White Habesha Dress">
+        <h3>Classic White Habesha Dress</h3>
+        <p class="small">Traditional embroidery, cotton.</p>
+        <div class="price">
+          <span class="old">Br 2,800</span>
+          <span class="new">Br 2,300</span>
+          <span class="discount">-18%</span>
+        </div>
+        <a class="btn btn-order" href="https://wa.me/251911395853?text=Hi%20Selina%20Design%2C%20I%20want%20to%20order%20the%20Classic%20White%20Habesha%20Dress.">Order on WhatsApp</a>
+      </article>
+      <!-- Product 2 -->
+      <article class="product">
+        <img src="images/photo_2025-10-19_09-51-57.jpg" alt="Brown Habesha Dress">
+        <h3>Elegant Brown Habesha Dress</h3>
+        <p class="small">Modern cut with traditional motifs.</p>
+        <div class="price">
+          <span class="new">Br 3,100</span>
+        </div>
+        <a class="btn btn-order" href="https://wa.me/251911395853?text=Hi%20Selina%20Design%2C%20I%20want%20to%20order%20the%20Elegant%20Brown%20Habesha%20Dress.">Order on WhatsApp</a>
+      </article>
+
+      <!-- Product 3 -->
+      <article class="product">
+        <img src="images/photo_2025-10-19_09-51-45.jpg" alt="Handcrafted Jewelry">
+        <h3>Handcrafted Jewelry Set</h3>
+        <p class="small">Gold-plated accents and intricate design.</p>
+        <div class="price">
+          <span class="new">Br 950</span>
+          <span class="discount">-10%</span>
+        </div>
+        <a class="btn btn-order" href="https://wa.me/251911395853?text=Hi%20Selina%20Design%2C%20I%20want%20to%20order%20the%20Handcrafted%20Jewelry%20Set.">Order on WhatsApp</a>
+      </article>
+
+    </section>
+
+    <div class="container center">
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="col">
+        <img src="images/selu.jpg" alt="Selina Design logo small" class="logo-sm"/>
+        <p>Selina Design — Addis Ababa, CMC ሚኪኤል</p>
+      </div>
+      <div class="col">
+        <h4>Contact</h4>
+        <p>+251 911 395 853<br/>+251 930 010 113</p>
+        <a href="https://wa.me/251911395853" class="small-link">Order on WhatsApp</a>
+      </div>
+      <div class="col">
+        <h4>Follow</h4>
+        <div class="socials">
+          <a href="https://www.tiktok.com/@selinadesign212?lang=en" target="_blank" rel="noopener">TikTok</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" target="_blank" rel="noopener">YouTube</a>
+          <a href="#" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">
+      <small>© <span id="year2"></span> Selina Design — All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function () {
+      document.querySelector('.nav').classList.toggle('open');
+    });
+    document.getElementById('year2').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

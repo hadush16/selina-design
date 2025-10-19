@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Selina Design</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><img src="images/selu.jpg" alt="Selina Design logo" class="logo"/></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+      <div class="cta"><a href="contact.html" class="btn btn-primary">Contact</a></div>
+      <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <!-- Contact Intro -->
+    <section class="contact-intro">
+      <h1>Contact Us</h1>
+      <p class="lead">We would love to hear from you! Reach out via WhatsApp, email, or the form below.</p>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="contact-grid">
+      <div class="contact-card">
+        <h4>Call or WhatsApp</h4>
+        <p>+251 911 395 853</p>
+        <a href="https://wa.me/251911395853" class="btn btn-order">Order on WhatsApp</a>
+      </div>
+      <div class="contact-card">
+        <h4>Email</h4>
+        <p>info@selinadesign.com</p>
+      </div>
+      <div class="contact-card">
+        <h4>Visit Us</h4>
+        <p>Addis Ababa, Ethiopia</p>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="col">
+        <img src="images/selu.jpg" alt="Selina Design logo small" class="logo-sm"/>
+        <p>Selina Design — Addis Ababa, CMC ሚኪኤል</p>
+      </div>
+      <div class="col">
+        <h4>Contact</h4>
+        <p>+251 911 395 853<br/>+251 930 010 113</p>
+        <a href="https://wa.me/251911395853" class="small-link">Order on WhatsApp</a>
+      </div>
+      <div class="col">
+        <h4>Follow</h4>
+        <div class="socials">
+          <a href="https://www.tiktok.com/@selinadesign212?lang=en" target="_blank" rel="noopener">TikTok</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" target="_blank" rel="noopener">YouTube</a>
+          <a href="#" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">
+      <small>© <span id="year2"></span> Selina Design — All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function () {
+      document.querySelector('.nav').classList.toggle('open');
+    });
+    document.getElementById('year2').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

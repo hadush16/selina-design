@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Selina Design</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><img src="images/selu.jpg" alt="Selina Design logo" class="logo"/></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a class="active" href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="cta"><a href="shop.html" class="btn btn-primary">Shop</a></div>
+      <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="about-hero">
+      <div class="about-grid">
+        <div>
+          <h1>About Selina Design</h1>
+          <p class="lead">Selina Design (ሰሊና ዲዛይን) celebrates Ethiopian heritage with modern tailoring. Based in Addis Ababa, our goal is to preserve traditional techniques while offering contemporary styles.</p>
+          <h3>Our Mission</h3>
+          <p>We craft high-quality Habesha dresses and jewelry using authentic materials and careful handwork. Each piece is designed to feel personal and timeless.</p>
+          <h3>Visit Us</h3>
+          <p>Addis Ababa, CMC ሚኪኤል — appointment recommended.</p>
+        </div>
+        <div class="about-media">
+          <img src="images/photo_2025-10-19_09-51_44.jpg" alt="Selina Design workshop">
+        </div>
+      </div>
+    </section>
+
+    <section class="social-embed">
+      <h2>Watch Our Creations</h2>
+      <p>Follow our TikTok for new arrivals and behind-the-scenes.</p>
+      <div class="media-links">
+        <a class="btn btn-outline" href="https://www.tiktok.com/@selinadesign212?lang=en" target="_blank" rel="noopener">TikTok</a>
+        <a class="btn btn-outline" href="#" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn btn-outline" href="#" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="col">
+        <img src="images/selu.jpg" alt="selu" class="logo-sm"/>
+        <p>Selina Design — Addis Ababa</p>
+      </div>
+      <div class="col">
+        <h4>Contact</h4>
+        <p>+251 911 395 853<br/>+251 930 010 113</p>
+        <a href="https://wa.me/251911395853" class="small-link">Order on WhatsApp</a>
+      </div>
+      <div class="col">
+        <h4>Follow</h4>
+        <div class="socials">
+          <a href="https://www.tiktok.com/@selinadesign212?lang=en" target="_blank" rel="noopener">TikTok</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" target="_blank" rel="noopener">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">
+      <small>© <span id="year3"></span> Selina Design — All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function () {
+      document.querySelector('.nav').classList.toggle('open');
+    });
+    document.getElementById('year3').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
